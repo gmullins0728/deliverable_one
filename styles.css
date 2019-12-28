@@ -16,8 +16,8 @@ html {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .columns {
+@media screen and (max-width: 768px) {
+    .container {
         width: 100%;
     }
 }
@@ -60,9 +60,8 @@ nav ul li a {
     font-weight: 300;
 }
 
-nav ul li button a {
+.button  {
     display: inline-block;
-    width: auto;
     background-color: #61c386;
     border-radius: 10px;
     color: #FFFFFF;
@@ -73,7 +72,7 @@ nav ul li button a {
     font-weight: 300;
 }
 
-nav ul li button a:hover {
+.button:hover {
     background-color: #f7e966;
     border-radius: 10px;
     color: #5b8c6f;
@@ -125,7 +124,7 @@ h3 {
     font-weight: 300;
 }
 
-p button a {
+.button2  {
     display: inline-block;
     width: auto;
     background-color: #61c386;
@@ -138,7 +137,7 @@ p button a {
     font-weight: 300;
 }
 
-p button a:hover {
+.button2:hover {
     background-color: #f7e966;
     border-radius: 10px;
     color: #5b8c6f;
