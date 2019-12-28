@@ -1,5 +1,7 @@
 html {
     background-color: #e8ded9;
+}
+.bgimg {
     background-image: url("img/code.png");
     background-attachment: fixed;
     background-position: center;
@@ -8,14 +10,14 @@ html {
     
 }
 
-@media only screen and (min-width: 768px) {
-    body{
+@media only screen and (max-width: 768px) {
+    .bgimg{
         background-image: none;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .column {
+@media only screen and (max-width: 768px) {
+    .columns {
         width: 100%;
     }
 }
@@ -58,7 +60,7 @@ nav ul li a {
     font-weight: 300;
 }
 
-nav ul button {
+nav ul li button a {
     display: inline-block;
     width: auto;
     background-color: #61c386;
@@ -71,7 +73,7 @@ nav ul button {
     font-weight: 300;
 }
 
-nav ul button:hover {
+nav ul li button a:hover {
     background-color: #f7e966;
     border-radius: 10px;
     color: #5b8c6f;
@@ -123,7 +125,7 @@ h3 {
     font-weight: 300;
 }
 
-button {
+p button a {
     display: inline-block;
     width: auto;
     background-color: #61c386;
@@ -136,7 +138,7 @@ button {
     font-weight: 300;
 }
 
-button:hover {
+p button a:hover {
     background-color: #f7e966;
     border-radius: 10px;
     color: #5b8c6f;
