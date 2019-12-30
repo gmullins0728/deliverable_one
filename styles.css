@@ -1,150 +1,121 @@
-html {
-    background-color: #e8ded9;
-}
-.bgimg {
-    background-image: url("img/code.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-}
-
-@media only screen and (max-width: 768px) {
-    .bgimg{
-        background-image: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    height: auto;
-    width: auto;
-    grid-template-areas:
-        "header header header header"
-        "left middle middle right";
-    margin-left: auto;
-    margin-right: auto;
-}
-
-nav {
-    grid-area: middle;
-
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-}
-
-nav ul li {
-    display: inline-block;
-    width: auto;
+body {
+    background-color: #e8ded9!important;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
     font-weight: 300;
-    letter-spacing: 1px;
-}
+} 
 
-nav ul li a {
-    color: #5b8c6f;
-    text-decoration: none;
-    font-weight: 300;
-}
-
-.button  {
-    display: inline-block;
-    background-color: #61c386;
-    border-radius: 10px;
-    color: #FFFFFF;
-    padding: 12px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 300;
-}
-
-.button:hover {
-    background-color: #f7e966;
-    border-radius: 10px;
-    color: #5b8c6f;
-    padding: 12px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 300;
+.emphasis {
+    color: #61c386;
 }
 
 .header {
-    grid-area: left;
+    max-width: 100%;
+	padding: 30px;
+}
+
+.navlist {
     display: flex;
-    flex-direction: row;
-    font-weight: 400;
-}
+    flex-flow: column wrap;
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+} 
 
-h1 {
-    color: #000000;
-}
-
-b {
-    color: #61c386;
-}
-
-.left {
-    grid-area: left;
-    margin-top: 50%;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-weight: 600;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h2 {
-    height: 150px;
-    font-weight: 600;
-}
-
-b2 {
-    color: #61c386;
-}
-
-h3 {
-    color: #61c386;
-    font-weight: 300;
-}
-
-.button2  {
-    display: inline-block;
-    width: auto;
-    background-color: #61c386;
-    border-radius: 10px;
-    color: #FFFFFF;
-    padding: 12px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 300;
-}
-
-.button2:hover {
-    background-color: #f7e966;
-    border-radius: 10px;
+.navlist a {
     color: #5b8c6f;
-    padding: 12px;
-    border: none;
-    text-align: center;
+    display: block;
+    font-weight: 400;
+    padding: 10px;
+    text-align: left; 
     text-decoration: none;
-    font-weight: 300;
 }
 
+.btn {
+    color: #FFFFFF;
+    background-color: #61c386;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    padding: 12px;
+    width: 100%; 
+    text-align: center;
+    text-decoration: none;
+}
+
+.navlist a.btn {
+    text-align: center; 
+    color: white;
+}
+
+.btn:hover {
+    background-color: #f7e996;
+    color: #61c386;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navlist a.btn:hover {
+    color:#61c386;
+}
+
+.main {
+	align-items: left;
+    height: 500px;
+    padding: 10px;
+} 
+
+.main-container {
+    color:black;
+    flex-flow: row wrap;
+    list-style: none;
+    margin-top: 10%;
+    padding: 10px;
+}
+
+.main-container li {
+    padding: 12px;
+}
+
+.question {
+    font-weight: 600;
+    font-size: 3em;
+    width: auto;
+}
+
+.learnText {
+    font-size: 1em;
+    color: #5b8c6f;
+}
+
+@media (min-width: 768px) {
+
+	.header .hcontainer {
+        display: flex;
+		justify-content: space-between;
+	}
+
+    .navlist {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+    
+    .btn {
+        display: inline-flex;
+        width: auto;
+    }
+
+    .main {
+        background-image: url("img/code.png");
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .question { 
+        width: 50%;
+    }
+}
